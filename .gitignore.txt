@@ -1,0 +1,4 @@
+#Ignore Images and Icons
+
+Icons/
+Images/
