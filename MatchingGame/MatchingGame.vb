@@ -30,7 +30,24 @@ Public Class memoryGame
 
     Private Sub start_restart_btn_Click(sender As Object, e As EventArgs) Handles start_restart_btn.Click
         isBtnClicked = True
+        For i As Integer = pictures.Length - 1 To 0 Step -1
+            index = random.Next(i + 1)
+            Dim temp As Bitmap = pictures(index)
+            pictures(index) = pictures(i)
+            pictures(i) = temp
+        Next
 
+        ' assign the shuffled pictures to the picture boxes
+        Dim pictureboxindex As Integer = 0
+        For Each pb As PictureBox In mainContainerGrpBox.Controls.OfType(Of PictureBox)()
+            pb.Image = My.Resources.cover
+            pb.SizeMode = PictureBoxSizeMode.CenterImage
+            pb.Tag = pictureboxindex Mod 6 ' set the tag to the picture index
+            pictureboxindex += 1
+
+            AddHandler pb.Click, AddressOf PictureBox_Click
+
+        Next
         timeLeftContainer.Text = countDown
         gameTimer.Start()
 
@@ -38,26 +55,9 @@ Public Class memoryGame
             start_restart_btn.Text = "Restart"
             isBtnClicked = False
             countDown = 30
-
+            restart()
             'call the function for the game that randomizes the pictures
-            For i As Integer = pictures.Length - 1 To 0 Step -1
-                index = random.Next(i + 1)
-                Dim temp As Bitmap = pictures(index)
-                pictures(index) = pictures(i)
-                pictures(i) = temp
-            Next
 
-            ' assign the shuffled pictures to the picture boxes
-            Dim pictureboxindex As Integer = 0
-            For Each pb As PictureBox In mainContainerGrpBox.Controls.OfType(Of PictureBox)()
-                pb.Image = My.Resources.cover
-                pb.SizeMode = PictureBoxSizeMode.CenterImage
-                pb.Tag = pictureboxindex Mod 6 ' set the tag to the picture index
-                pictureboxindex += 1
-
-                AddHandler pb.Click, AddressOf PictureBox_Click
-
-            Next
         End If
 
     End Sub
@@ -85,11 +85,29 @@ Public Class memoryGame
 
     Private Sub gameStarts()
         While tries <> 12
-
-
             tries += 1
         End While
     End Sub
 
+    Private Sub restart()
+        For i As Integer = pictures.Length - 1 To 0 Step -1
+            index = random.Next(i + 1)
+            Dim temp As Bitmap = pictures(index)
+            pictures(index) = pictures(i)
+            pictures(i) = temp
+        Next
+
+        ' assign the shuffled pictures to the picture boxes
+        Dim pictureboxindex As Integer = 0
+        For Each pb As PictureBox In mainContainerGrpBox.Controls.OfType(Of PictureBox)()
+            pb.Image = My.Resources.cover
+            pb.SizeMode = PictureBoxSizeMode.CenterImage
+            pb.Tag = pictureboxindex Mod 6 ' set the tag to the picture index
+            pictureboxindex += 1
+
+            AddHandler pb.Click, AddressOf PictureBox_Click
+
+        Next
+    End Sub
 
 End Class
