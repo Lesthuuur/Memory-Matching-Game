@@ -1,0 +1,15 @@
+C:\Users\Les\Documents\Programming\C#\School Activity\MatchingGame\MatchingGame\obj\Debug\MatchingGame.vbproj.AssemblyReference.cache
+C:\Users\Les\Documents\Programming\C#\School Activity\MatchingGame\MatchingGame\obj\Debug\MatchingGame.vbproj.SuggestedBindingRedirects.cache
+C:\Users\Les\Documents\Programming\C#\School Activity\MatchingGame\MatchingGame\obj\Debug\MatchingGame.memoryGame.resources
+C:\Users\Les\Documents\Programming\C#\School Activity\MatchingGame\MatchingGame\obj\Debug\MatchingGame.Resources.resources
+C:\Users\Les\Documents\Programming\C#\School Activity\MatchingGame\MatchingGame\obj\Debug\MatchingGame.vbproj.GenerateResource.cache
+C:\Users\Les\Documents\Programming\C#\School Activity\MatchingGame\MatchingGame\obj\Debug\MatchingGame.vbproj.CoreCompileInputs.cache
+C:\Users\Les\Documents\Programming\C#\School Activity\MatchingGame\MatchingGame\bin\Debug\MatchingGame.exe.config
+C:\Users\Les\Documents\Programming\C#\School Activity\MatchingGame\MatchingGame\bin\Debug\MatchingGame.exe
+C:\Users\Les\Documents\Programming\C#\School Activity\MatchingGame\MatchingGame\bin\Debug\MatchingGame.pdb
+C:\Users\Les\Documents\Programming\C#\School Activity\MatchingGame\MatchingGame\bin\Debug\MatchingGame.xml
+C:\Users\Les\Documents\Programming\C#\School Activity\MatchingGame\MatchingGame\bin\Debug\Guna.UI2.dll
+C:\Users\Les\Documents\Programming\C#\School Activity\MatchingGame\MatchingGame\obj\Debug\MatchingGame.vbproj.CopyComplete
+C:\Users\Les\Documents\Programming\C#\School Activity\MatchingGame\MatchingGame\obj\Debug\MatchingGame.exe
+C:\Users\Les\Documents\Programming\C#\School Activity\MatchingGame\MatchingGame\obj\Debug\MatchingGame.xml
+C:\Users\Les\Documents\Programming\C#\School Activity\MatchingGame\MatchingGame\obj\Debug\MatchingGame.pdb

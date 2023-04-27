@@ -79,17 +79,18 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Memory Matching Game.vb">
+    <Compile Include="MatchingGame.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Memory Matching Game.Designer.vb">
-      <DependentUpon>Memory Matching Game.vb</DependentUpon>
+    <Compile Include="MatchingGame.Designer.vb">
+      <DependentUpon>MatchingGame.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
       <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <Compile Include="My Project\Resources.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -103,8 +104,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Memory Matching Game.resx">
-      <DependentUpon>Memory Matching Game.vb</DependentUpon>
+    <EmbeddedResource Include="MatchingGame.resx">
+      <DependentUpon>MatchingGame.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -125,6 +126,27 @@
     </None>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img6.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
